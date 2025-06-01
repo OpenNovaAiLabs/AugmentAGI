@@ -48,21 +48,21 @@ https://templatemo.com/tm-584-pod-talk
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper(".mySwiper", {
-            loop: true,
-            autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-            },
-            slidesPerView: 2,
-            spaceBetween: 30,
-            breakpoints: {
-            576: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            992: { slidesPerView: 5 }
-            }
-        });
-        </script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 2,
+    spaceBetween: 30,
+    breakpoints: {
+      576: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      992: { slidesPerView: 5 }
+    }
+  });
+</script>
 
 
     <main>
@@ -128,17 +128,24 @@ https://templatemo.com/tm-584-pod-talk
                             <h1 class="text-white">Artificial General Intelligence</h1>
 
                             <p class="text-white">Academy | Courses | Certifications | Internships</p>
+                            <section class="py-5 bg-light">
+                                <div class="container text-center">
+                                    <h5 class="mb-4">Get a certification from</h5>
+
                                     <!-- Swiper Slider -->
-                                    <div>
-                                        <h5 class="mb-4">Get a certification from</h5>
-                                        <div class="owl-carousel owl-theme"></div>
-                                            <div class="owl-carousel-info-wrap item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="40" alt="Google" class="owl-carousel-image img-fluid" /></div>
-                                            <div class="owl-carousel-info-wrap item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" height="40" alt="IBM" class="owl-carousel-image img-fluid"/></div>
-                                            <div class="owl-carousel-info-wrap item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Coursera_logo.svg" height="40" alt="Coursera" class="owl-carousel-image img-fluid"/></div>
-                                            <div class="owl-carousel-info-wrap item"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/EdX.svg" height="40" alt="edX" class="owl-carousel-image img-fluid"/></div>
-                                        </div>
-                                        <a href="#section_2" class="btn custom-btn smoothscroll mt-3">Start listening</a>
+                                    <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper align-items-center">
+                                        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" height="40" alt="Google" /></div>
+                                        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" height="40" alt="IBM" /></div>
+                                        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Coursera_logo.svg" height="40" alt="Coursera" /></div>
+                                        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/EdX.svg" height="40" alt="edX" /></div>
+                                        <!-- Add more logos as needed -->
                                     </div>
+                                    </div>
+                                </div>
+                                </section>
+
+                            <a href="#section_2" class="btn custom-btn smoothscroll mt-3">Start listening</a>
                         </div>
 
                         <div class="owl-carousel owl-theme">
