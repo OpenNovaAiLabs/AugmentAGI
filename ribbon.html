@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certification Ribbon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .certification-ribbon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ribbon-label {
+      flex-shrink: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .ribbon-track {
+      flex-grow: 1;
+      overflow: hidden;
+      position: relative;
+      height: 60px;
+    }
+
+    .logo-strip {
+      display: flex;
+      align-items: center;
+      animation: scrollLogos 20s linear infinite;
+    }
+
+    .logo-strip img {
+      height: 40px;
+      margin: 0 30px;
+      opacity: 0.9;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-strip img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    @keyframes scrollLogos {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .explore-btn {
+      flex-shrink: 0;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .explore-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .certification-ribbon {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .ribbon-track {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certification-ribbon">
+    <div class="ribbon-label">Get Certified From</div>
+    <div class="ribbon-track">
+      <div class="logo-strip">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/EdX_logo.svg" alt="edX">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Coursera-Logo_600x600.svg" alt="Coursera">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/LinkedIn_Logo.svg" alt="LinkedIn">
+        <!-- repeat to ensure smooth loop -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/EdX_logo.svg" alt="edX">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Coursera-Logo_600x600.svg" alt="Coursera">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/LinkedIn_Logo.svg" alt="LinkedIn">
+      </div>
+    </div>
+    <button class="explore-btn">Start Exploring</button>
+  </div>
+
+</body>
+</html>
