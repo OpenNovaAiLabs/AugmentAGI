@@ -105,6 +105,14 @@ https://templatemo.com/tm-584-pod-talk
 
                             <p class="text-white">Academy | Courses | Certifications | Internships</p>
                             <iframe src="ribbon.html" style="width: 100%; border: none; height: 100px;"></iframe>
+                            <div id="ribbon-placeholder"></div>
+                            <script>
+                                fetch("ribbon.html")
+                                    .then(response => response.text())
+                                    .then(html => {
+                                    document.getElementById("ribbon-placeholder").innerHTML = html;
+                                    });
+                            </script>
 
                             <a href="#section_2" class="btn custom-btn smoothscroll mt-3">Start listening</a>
                         </div>
