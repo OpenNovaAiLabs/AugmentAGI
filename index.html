@@ -105,15 +105,16 @@ https://templatemo.com/tm-584-pod-talk
 
                             <p class="text-white">Academy | Courses | Certifications | Internships</p>
                             <a href="#section_2" class="btn custom-btn smoothscroll mt-3">Start listening</a>
-                            <div id="ribbon-placeholder"></div>
+                            
+                        </div>
+                        <div id="course-placeholder"></div>
                             <script>
-                                fetch("ribbon.html")
+                                fetch("course.html")
                                     .then(response => response.text())
                                     .then(html => {
-                                    document.getElementById("ribbon-placeholder").innerHTML = html;
+                                    document.getElementById("course-placeholder").innerHTML = html;
                                     });
                             </script>
-                        </div>
 
                         <div class="owl-carousel owl-theme">
                             <div class="owl-carousel-info-wrap item">
@@ -284,6 +285,14 @@ https://templatemo.com/tm-584-pod-talk
                 </div>
             </div>
         </section>
+        <div id="ribbon-placeholder"></div>
+                            <script>
+                                fetch("ribbon.html")
+                                    .then(response => response.text())
+                                    .then(html => {
+                                    document.getElementById("ribbon-placeholder").innerHTML = html;
+                                    });
+                            </script>
 
 
         <section class="latest-podcast-section section-padding pb-0" id="section_2">
